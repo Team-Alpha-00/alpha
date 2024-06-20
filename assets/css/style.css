@@ -14,6 +14,8 @@ body {
   color: #444444;
 }
 
+html { overflow-y: scroll; }
+
 a {
   color: #5fcf80;
   text-decoration: none;
