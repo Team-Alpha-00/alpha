@@ -674,7 +674,7 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #5fcf80;
+  color: black;
   font-weight: 700;
 }
 
@@ -1664,7 +1664,7 @@ section {
   align-items: center;
   height: 28vh;
   margin: 1px;
-  /* background-color: #f3f4f6; */
+  background-color: #eff1f5;
 }
 .contact-box {
             display: flex;

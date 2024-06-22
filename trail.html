@@ -3,195 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        .gk {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        body{
             margin: 0;
-            background-color: #f3f4f6;
+            padding: 0;
+            font-family: sans-serif;
+            background: #333;
         }
-        .contact-box {
-            display: flex;
-            align-items: center;
-            /* background: linear-gradient(to right, #3b82f6, #a855f7); */
-            background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-            border-radius: 10px;
-            padding: 20px;
-            width: 80%;
-            max-width: 800px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            color: white;
-        }
-        .contact-box .text {
-            flex: 1;
-        }
-        .contact-box h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-        .contact-box p {
-            margin: 10px 0 0;
-            font-size: 16px;
-        }
-        .contact-box .button {
-            background-color: white;
-            color: #3b82f6;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .contact-box .button:hover {
-            background-color: #e0e7ff;
-        }
-        .contact-box .image-container {
-            margin-left: 20px;
-            padding-right: 40px;
-        }
-        .contact-box img {
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-        }
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        .modal.show {
-            visibility: visible;
-            opacity: 1;
-        }
-        .modal-content {
-            background-color: #1f2937;
-            padding: 20px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 400px;
-            color: white;
-            position: relative;
-        }
-        .modal-content h2 {
-            margin-top: 0;
-        }
-        .modal-content .close-button {
-            position: absolute;
-            top: 10px;
-            right: 0px;
-            left: 180px;
-            background: none;
-            border: none;
-            font-size: 20px;
-            color: white;
-            cursor: pointer;
-        }
-        .modal-content input,
-        .modal-content textarea {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: none;
-        }
-        .modal-content button {
-            background-color: #f59e0b;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-            margin-top: 10px;
-        }
-        /* .modal-content button:hover {
-            background-color: #d97706;
-        } */
-        .modal-content .checkbox-container {
-            display:flex;
-            align-items: center;
-            font-size: 14px;
-            margin-top: 1px;
-            padding: 0px 0px 0px 0px; 
-        }
-        .modal-content .checkbox-container input {
-          
-            margin-left: 0%;
-            align-self: start;
-            
+        h1{
+            font-size: 150px;
+            font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        background: url(bg3.jpg);
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.8;
+        -webkit-background-clip: text;
         }
     </style>
 </head>
 <body>
-    <div class="gk">
-    <div class="contact-box">
-        <div class="text">
-            <h1>Need help? Feel free to reach out to us!</h1>
-            <p>We generally respond within 1–2 business days</p>
-        </div>
-        <div class="image-container">
-            <img src="assets/img-1.jpg" alt="Person holding a phone">
-        </div>
-        <a href="#" class="button" id="open-modal">Talk to Our Experts</a>
-    </div>
-
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <button class="close-button" id="close-button">&times;</button>
-            <h2>Let's Connect</h2>
-            <p>Fill out the form with your enquiry. We will take care of the rest.</p>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="Phone Number" required>
-            <textarea placeholder="Message" required></textarea>
-            <div class="checkbox-container">
-                <input type="checkbox" id="terms" required>
-                <label for="terms">By continuing, you accept our Terms of Use and our Privacy Policy</label>
-            </div>
-            <button type="submit">Send</button>
-        </div>
-    </div>
-
-    <script>
-        const modal = document.getElementById('modal');
-        const closeButton = document.getElementById('close-button');
-        const openModalButton = document.getElementById('open-modal');
-
-        // Function to show the modal
-        function showModal() {
-            modal.classList.add('show');
-        }
-
-        // Function to hide the modal
-        function hideModal() {
-            modal.classList.remove('show');
-            console.log('Modal closed');
-            // Add any additional code you want to run when the modal is closed
-        }
-
-        // Add event listener to the open modal button
-        openModalButton.addEventListener('click', (event) => {
-            event.preventDefault();
-            showModal();
-        });
-
-        // Add event listener to the close button
-        closeButton.addEventListener('click', hideModal);
-    </script>
-    </div>
+    <h1>ALPHA</h1>
 </body>
 </html>
