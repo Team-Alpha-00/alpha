@@ -421,11 +421,12 @@ h6 {
 
 #hero .container {
   padding-top: 72px;
+  padding-bottom: 0;
 }
 
 @media (max-width: 992px) {
   #hero .container {
-    padding-top: 62px;
+    padding-top: 52px;
   }
 }
 
@@ -435,6 +436,16 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+#about-head{
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  color: #41975b;
+  text-align: center;
+  /* background: rgb(201, 199, 199); */
   font-family: "Poppins", sans-serif;
 }
 
@@ -485,11 +496,27 @@ h6 {
   }
 }
 
+.underline{
+  position: relative;
+}
+
+.underline::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: solid 3px gold;
+  left: 0;
+  bottom: -10px;
+  border-radius: 80%;
+  height: 8px;
+
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -582,12 +609,12 @@ section {
 .load_more_button a {
   display: block;
   font-family: "Poppins", sans-serif;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   color: green;
   text-transform: uppercase;
   line-height: 41px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
 }
 
 /*--------------------------------------------------------------
@@ -1625,3 +1652,137 @@ section {
   width: auto; /* or fixed width */
   height: 100%; /* Set the height to fill the container */
 }
+
+
+
+/*connect us */ 
+
+.gk {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28vh;
+  margin: 0;
+  /* background-color: #f3f4f6; */
+}
+.contact-box {
+            display: flex;
+            align-items: center;      
+            background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        .contact-box .text {
+            flex: 1;
+        }
+        .contact-box h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .contact-box p {
+            margin: 10px 0 0;
+            font-size: 16px;
+        }
+        .contact-box .button {
+            background-color: white;
+            color: #3b82f6;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .contact-box .button:hover {
+            background-color: #e0e7ff;
+        }
+        .contact-box .image-container {
+            margin-left: 20px;
+            padding-right: 40px;
+        }
+        .contact-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal.show {
+            visibility: visible;
+            opacity: 1;
+        }
+        .modal-content {
+            background-color: #1f2937;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            color: white;
+            position: relative;
+        }
+        .modal-content h2 {
+            margin-top: 0;
+        }
+        .modal-content .close-button {
+            position: absolute;
+            top: 10px;
+            right: 0px;
+            left: 180px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .modal-content input,
+        .modal-content textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .modal-content button {
+            background-color: #f59e0b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        /* .modal-content button:hover {
+            background-color: #d97706;
+        } */
+        .modal-content .checkbox-container {
+            display:flex;
+            align-items: center;
+            font-size: 14px;
+            margin-top: 1px;
+            padding: 0px 0px 0px 0px; 
+        }
+        .modal-content .checkbox-container input {
+          
+            margin-left: 0%;
+            align-self: start;
+            
+        }
