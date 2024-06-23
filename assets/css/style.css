@@ -1802,11 +1802,12 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
           max-height: fit-content;
           padding-bottom: 0%;
           /* background: rgba(175, 161, 161, 0.2); */
-           /* Background color for the body */
-           background: #FFEEEE;  /* fallback for old browsers */
+          background: #FFEEEE;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+           /* Background color for the body */
+           
       }
 
       .section-wrapper {
@@ -1823,7 +1824,7 @@ background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, F
       }
 
       .section-wrapper img {
-          max-width: 120%; /* Ensure the image does not overflow the div */
+          max-width: 100%; /* Ensure the image does not overflow the div */
           height: auto;
           margin-left: 10px;
           border-radius: 20px;
