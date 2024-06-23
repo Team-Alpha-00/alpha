@@ -29,21 +29,21 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
     #header {
-    background-color: #ffffff; /* Example background color */
-    padding: 10px 0;
-    /* Add any other styles you need for the header */
-}
+      background-color: #ffffff;
+      /* Example background color */
+      padding: 10px 0;
+      /* Add any other styles you need for the header */
+    }
 
-.logo1 img {
-    max-height: 80px; /* Adjust the height of the logo as needed */
-    /* You can also use max-width or width to control the size */
-}
-.fig{
-  margin-left: 0%;
-}
+    .logo1 img {
+      max-height: 80px;
+      /* Adjust the height of the logo as needed */
+      /* You can also use max-width or width to control the size */
+    }
 
-
-
+    .fig {
+      margin-left: 0%;
+    }
   </style>
 
 </head>
@@ -51,12 +51,13 @@
 <body>
 
 
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <!-- <a href="index.html" class="logo me-auto"><img src="assets\img\logo4.jpg" alt="" class="img-fluid"></a> -->
     <div class="container d-flex align-items-center">
       <div class="logo1">
-        <img src="assets\img\logo4.jpg" alt="" class="img-fluid" >
+        <img src="assets\img\logo4.jpg" alt="" class="img-fluid">
         <!-- <figcaption class="fig"  style="font-size: 10px; font-weight: bolder;"> &nbsp; &nbsp; UNLOCKING MINDS</figcaption>
         <figcaption class="fig"  style="font-size: 10px; text-align: center;font-weight: bolder;"> WHERE LEARNING BEGINS</figcaption> -->
 
@@ -101,17 +102,18 @@
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
             <img src="assets/Home.png" style="border-radius:5%; padding-left: 60px; " class="img-fluid" alt="">
           </div>
-      
+
           <h1 id="about-head">
             <span class="underline">
               What We Offer ?
             </span>
-            
+
           </h1>
           <br><br><br><br>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <p style="text-align: justify; font-size: 16px;">
-              Welcome to <strong style="color: #29cc61;">ALPHA</strong>,where learning meets innovation! Our platform offers personalized
+              Welcome to <strong style="color: #29cc61;">ALPHA</strong>,where learning meets innovation! Our platform
+              offers personalized
               learning paths, interactive content, and expert-led courses to empower students. Engage with collaborative
               learning communities, enjoy flexible options, and receive continuous support for academic success. Join us
               today and unlock your full potential with <strong style="color: #29cc61;">ALPHA</strong>.
@@ -136,7 +138,8 @@
     <!-- End About Section -->
 
     <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts section-bg" style="background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);">
+    <section id="counts" class="counts section-bg"
+      style="background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);">
       <div class="container">
 
         <div class="row counters">
@@ -226,21 +229,21 @@
     </section>
     <!-- End Why Us Section -->
 
-<!--How It Works-->
-<div class="how">
- 
-  <section>
-    <h1 id="about-head">
-      <span class="underline">
-        How It Works ?
-      </span>
-      
-    </h1> 
-     <div class="section-wrapper">
-        <img src="assets/how_it_works.png" alt="How it works">
+    <!--How It Works-->
+    <div class="how">
+
+      <section>
+        <h1 id="about-head">
+          <span class="underline">
+            How It Works ?
+          </span>
+
+        </h1>
+        <div class="section-wrapper">
+          <img src="assets/how_it_works.png" alt="How it works">
+        </div>
+      </section>
     </div>
-  </section>
-</div>
 
 
 
@@ -442,19 +445,19 @@
 
     <!--Connect Us Box-->
     <div class="gk">
-    <div class="contact-box">
-      <div class="text">
+      <div class="contact-box">
+        <div class="text">
           <h1 style="font-weight: bold;">Need help? Feel free to reach out to us!</h1>
           <p>We generally respond within 1–2 business days</p>
-      </div>
-      <div class="image-container">
+        </div>
+        <div class="image-container">
           <img src="assets/img-1.jpg" alt="Person holding a phone">
+        </div>
+        <a href="#" class="button" id="open-modal">Talk to Our Experts</a>
       </div>
-      <a href="#" class="button" id="open-modal">Talk to Our Experts</a>
-  </div>
 
-  <div class="modal" id="modal">
-      <div class="modal-content">
+      <div class="modal" id="modal">
+        <div class="modal-content">
           <button class="close-button" id="close-button">&times;</button>
           <h2>Let's Connect</h2>
           <p>Fill out the form with your enquiry. We will take care of the rest.</p>
@@ -463,42 +466,42 @@
           <input type="tel" placeholder="Phone Number" required>
           <textarea placeholder="Message" required></textarea>
           <div class="checkbox-container">
-              <input type="checkbox" id="terms" required>
-              <label for="terms">By continuing, you accept our Terms of Use and our Privacy Policy</label>
+            <input type="checkbox" id="terms" required>
+            <label for="terms">By continuing, you accept our Terms of Use and our Privacy Policy</label>
           </div>
           <button type="submit">Send</button>
+        </div>
       </div>
-  </div>
 
-  <script>
-      const modal = document.getElementById('modal');
-      const closeButton = document.getElementById('close-button');
-      const openModalButton = document.getElementById('open-modal');
+      <script>
+        const modal = document.getElementById('modal');
+        const closeButton = document.getElementById('close-button');
+        const openModalButton = document.getElementById('open-modal');
 
-      // Function to show the modal
-      function showModal() {
+        // Function to show the modal
+        function showModal() {
           modal.classList.add('show');
-      }
+        }
 
-      // Function to hide the modal
-      function hideModal() {
+        // Function to hide the modal
+        function hideModal() {
           modal.classList.remove('show');
           console.log('Modal closed');
           // Add any additional code you want to run when the modal is closed
-      }
+        }
 
-      // Add event listener to the open modal button
-      openModalButton.addEventListener('click', (event) => {
+        // Add event listener to the open modal button
+        openModalButton.addEventListener('click', (event) => {
           event.preventDefault();
           showModal();
-      });
+        });
 
-      // Add event listener to the close button
-      closeButton.addEventListener('click', hideModal);
-  </script>
-  </div>
+        // Add event listener to the close button
+        closeButton.addEventListener('click', hideModal);
+      </script>
+    </div>
 
-<!--End of connect us box-->
+    <!--End of connect us box-->
 
   </main><!-- End #main -->
 
