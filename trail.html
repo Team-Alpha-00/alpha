@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>How it Works</title>
     <style>
-        body{
+        .how {
+            font-family: Arial, sans-serif;
+            color: #fff;
             margin: 0;
             padding: 0;
-            font-family: sans-serif;
-            background: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1a1a2e; /* Background color for the body */
         }
-        h1{
-            font-size: 150px;
-            font-weight: 900;
-        text-transform: uppercase;
-        letter-spacing: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        margin: 0;
-        background: url(bg3.jpg);
-        background-size: cover;
-        -webkit-text-fill-color: transparent;
-        opacity: 0.8;
-        -webkit-background-clip: text;
+
+        .section-wrapper {
+            /* background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%); */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%; /* Reduce the width to fit within the screen */
+            max-width: 800px; /* Max width for larger screens */
+            height: auto; /* Adjust height if necessary */
+        }
+
+        .section-wrapper img {
+            max-width: 100%; /* Ensure the image does not overflow the div */
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>ALPHA</h1>
+    <div class="how">
+        <section>
+        <h1>HOW IT WORKS</h1>
+        <div class="section-wrapper">
+            <img src="assets/how it works.jpg" alt="How it works">
+        </div>
+    </section>
+    </div>
+    
 </body>
 </html>
