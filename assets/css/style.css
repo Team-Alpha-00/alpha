@@ -562,9 +562,9 @@ section {
 .breadcrumbs {
   margin-top: 73px;
   text-align: center;
-  background: #5fcf80;
   padding: 30px 0;
-  color: #fff;
+  color: #37423b;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 992px) {
@@ -1496,13 +1496,13 @@ border-radius: 14px;
 #footer {
   color: black;
   font-size: 14px;
-  font-weight: 400;
-  background: #eef0ef;
   font-family: "poppins", sans-serif;
+  background: #eef0ef;
+  margin-top: 0%;
 }
 
 #footer .footer-top {
-  padding: 40px 0 8px 0;
+  padding: 40px 0 20px 0;
   background: #eef0ef;;
 }
 
@@ -1514,7 +1514,7 @@ border-radius: 14px;
   font-size: 22px;
   margin: 0 0 30px 0;
   padding: 2px 0 2px 0;
-  line-height: 2;
+  line-height: 1;
   font-weight: 700;
 }
 
@@ -1535,7 +1535,7 @@ border-radius: 14px;
 }
 
 #footer .footer-top .footer-links {
-  margin-bottom: 30px;
+  margin-bottom:2px;
 }
 
 #footer .footer-top .footer-links ul {
@@ -1546,8 +1546,7 @@ border-radius: 14px;
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: black;
-  font-weight: bold;
+  color: #5fcf80;
   font-size: 18px;
   line-height: 1;
 }
@@ -1571,7 +1570,7 @@ border-radius: 14px;
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: green;
+  color: #5fcf80;
 }
 
 #footer .footer-newsletter {
