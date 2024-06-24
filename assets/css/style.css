@@ -597,6 +597,10 @@ section {
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+  15px 15px 15px rgba(0,0,0,0.1),
+  inset -5px -5px 5px rgba(255,255,255,0.2),
+  inset 5px 5px 5px rgba(0,0,0,0.1);
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
@@ -766,6 +770,7 @@ section {
 --------------------------------------------------------------*/
 .features {
   padding-top: 0px;
+  /* background-color: rgba(255, 255, 255, 0.2); */
 }
 
 .features .icon-box {
@@ -774,6 +779,11 @@ section {
   padding: 20px;
   transition: 0.3s;
   border: 1px solid #eef0ef;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+  15px 15px 15px rgba(0,0,0,0.1),
+  inset -5px -5px 5px rgba(255,255,255,0.2),
+  inset 5px 5px 5px rgba(0,0,0,0.1);
+border-radius: 14px;
 }
 
 .features .icon-box i {
@@ -809,10 +819,13 @@ section {
 .courses .course-item {
   border-radius: 5px;
   border: 1px solid #eef0ef;
+  
 }
 
 .courses .course-content {
   padding: 15px;
+  background-color: white;
+ 
 }
 
 .courses .course-content h3 {
@@ -1481,14 +1494,16 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #37423b;
+  color: black;
   font-size: 14px;
+  font-weight: 400;
   background: #eef0ef;
+  font-family: "poppins", sans-serif;
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #f9faf9;
+  padding: 40px 0 8px 0;
+  background: #eef0ef;;
 }
 
 #footer .footer-top .footer-contact {
@@ -1499,7 +1514,7 @@ section {
   font-size: 22px;
   margin: 0 0 30px 0;
   padding: 2px 0 2px 0;
-  line-height: 1;
+  line-height: 2;
   font-weight: 700;
 }
 
@@ -1507,14 +1522,14 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-  color: #777777;
+  font-family: "poppins", sans-serif;
+  color: black;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: black;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1531,7 +1546,8 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #5fcf80;
+  color: black;
+  font-weight: bold;
   font-size: 18px;
   line-height: 1;
 }
@@ -1547,7 +1563,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: black;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1555,7 +1571,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #5fcf80;
+  color: green;
 }
 
 #footer .footer-newsletter {
@@ -1565,7 +1581,7 @@ section {
 #footer .footer-newsletter h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: black;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1672,7 +1688,7 @@ section {
   align-items: center;
   height: 28vh;
   margin: 1px;
-  background-color: #eff1f5;
+  /* background-color: #eff1f5; */
 }
 .contact-box {
             display: flex;
@@ -1680,8 +1696,8 @@ section {
             background: rgb(34,193,195);
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
             border-radius: 10px;
-            padding: 20px;
-            width: 100%;
+            padding: 18px;
+            width: 120%;
             max-width: 850px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             color: white;
