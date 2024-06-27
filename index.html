@@ -139,7 +139,10 @@
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts section-bg"
-      style="background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);">
+      style="background: #FFEEEE;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      ">
       <div class="container">
 
         <div class="row counters">
@@ -248,6 +251,8 @@
 
 
     <!-- ======= Features Section ======= -->
+     <br><br>
+
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -335,7 +340,11 @@
     </section><!-- End Features Section -->
 
     <!-- ======= Popular Courses Section ======= -->
-    <section id="popular-courses" class="courses" style="background-color: #eff1f5; ">
+    <section id="popular-courses" class="courses" 
+    style="
+    background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+    background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+    ">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -428,11 +437,16 @@
             </div>
 
           </div> <!-- End Course Item-->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col">
               <div class="load_more_button"><a href="courses.html" target="_blank"><strong>Load more</strong></a></div>
             </div>
           </div>
+        </div> -->
+
+
+        <div class="text-center">
+          <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
         </div>
 
       </div>
@@ -522,9 +536,8 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
@@ -534,9 +547,9 @@
             <h4>Our Services</h4>
             <ul>
               <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li> -->
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Data Science</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Competitive Coding</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="roadmap.html">RoadMaps</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="events.html">Blogs</a></li>
               <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
             </ul>
           </div>

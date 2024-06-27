@@ -648,6 +648,9 @@ section {
   color: #5fcf80;
 }
 
+
+
+
 .about .content .learn-more-btn {
   background: #5fcf80;
   color: #fff;
@@ -966,7 +969,7 @@ border-radius: 14px;
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
-  border-radius: 10px;
+  border-radius: 60px;
   border: 6px solid #fff;
   position: absolute;
   left: -45px;
