@@ -1001,3 +1001,26 @@ h6 {
   height: 100%; /* Set the height to fill the container */
 }
 
+
+#loadMore {
+  width: 130px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: rgb(82, 218, 82);
+  transition: .3s;
+  text-decoration: none;
+  font-size: 15px;
+ font-family: "Poppins", sans-serif;
+}
+
+#loadMore:hover {
+  color: white;
+  border: 1px solid greenyellow;
+  background-color: rgb(196, 248, 118);
+  text-decoration: none;
+}
