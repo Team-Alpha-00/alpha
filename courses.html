@@ -80,20 +80,105 @@
 
     <!-- ======= Breadcrumbs ======= -->
     &nbsp;
-    <div class="breadcrumbs">
+    <br><br><br>
+    <!-- <div class="breadcrumbs">
       <h1 id="about-head">
         <span class="underline">
           Courses
-        </span>
+        </span> -->
 
       </h1>
       <div class="container" style="font-weight: 600;">
-        <br><br>
-        <p>Jumpstart your career with our diverse selection of certified internship programs, in collaboration with over
+        
+        <!-- <p>Jumpstart your career with our diverse selection of certified internship programs, in collaboration with over
           50 partnered companies. Apply your theoretical knowledge in capstone projects and receive
-          evaluations from industry experts.. </p>
+          evaluations from industry experts.. </p> -->
       </div>
     </div><!-- End Breadcrumbs -->
+    <section class="course-first">
+      
+      <div class="container">
+          <div class="content">
+            
+              <div class="header">Specialised Programs</div>
+              <div class="subheader">
+                  Kickstart your Career with our wide range of Certified Internship Programs with 150+ Partnered Companies and IITs. Implicate your theoretical learnings in Capstone Projects and get evaluated by Industry Experts.
+              </div>
+              <a href="#" class="talk-to-us" id="open-modal">Talk to Us</a>
+              <div class="ratings">
+                  <span>⭐ Rated 4.9/5</span>
+                  <span>|</span>
+                  <span>👥 Trusted by 1.5 lac+ learners</span>
+              </div>
+              <div class="features">
+                  <div class="feature">
+                      <img src="assets/img-11.png" alt="Self paced">
+                      <div>Self paced</div>
+                  </div>
+                  <div class="feature">
+                      <img src="assets/img-11.png" alt="Mentor Led">
+                      <div>Mentor Led</div>
+                  </div>
+                  <div class="feature">
+                      <img src="assets/img-11.png" alt="Professional">
+                      <div>Professional</div>
+                  </div>
+              </div>
+          
+          </div>
+          <div class="side-image">
+              <img src="assets/student.png" alt="Side Image">
+          </div>
+      </div>
+    </section>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <button class="close-button" id="close-button">&times;</button>
+        <h2>Let's Connect</h2>
+        <p>Fill out the form with your enquiry. We will take care of the rest.</p>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea placeholder="Message" required></textarea>
+        <div class="checkbox-container">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">By continuing, you accept our Terms of Use and our Privacy Policy</label>
+        </div>
+        <button type="submit">Send</button>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById('modal');
+      const closeButton = document.getElementById('close-button');
+      const openModalButton = document.getElementById('open-modal');
+
+      // Function to show the modal
+      function showModal() {
+        modal.classList.add('show');
+      }
+
+      // Function to hide the modal
+      function hideModal() {
+        modal.classList.remove('show');
+        console.log('Modal closed');
+        // Add any additional code you want to run when the modal is closed
+      }
+
+      // Add event listener to the open modal button
+      openModalButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        showModal();
+      });
+
+      // Add event listener to the close button
+      closeButton.addEventListener('click', hideModal);
+    </script>
+  </div>
+
+  <!--End of connect us box-->
+
 
     <!-- ======= Courses Section ======= -->
     <section id="courses" class="courses">

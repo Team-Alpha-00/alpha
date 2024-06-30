@@ -564,7 +564,7 @@ section {
   margin-top: 73px;
   text-align: center;
   padding: 30px 0;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   color: black;
   font-family: "Poppins", sans-serif;
 }
@@ -1959,4 +1959,122 @@ button:hover{
 .logos-slide img {
   height: 80px;
   margin: 0 30px;
+}
+
+
+
+
+
+
+
+
+.course-first {
+  font-family: Arial, sans-serif;
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+    background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+  color: #1e2a38;
+  margin: 0;
+  padding: 0;
+}
+.course-first .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.course-first .content {
+  max-width: 600px;
+}
+.course-first .header {
+  font-size: 40px;
+  font-weight:600;
+  margin-bottom: 20px;
+}
+.course-first .subheader {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+.course-first .talk-to-us {
+  background-color: #ff9800;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.course-first .ratings {
+  margin-top: 20px;
+  font-size: 1em;
+}
+.course-first .ratings span {
+  margin-right: 10px;
+}
+.course-first .features {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.course-first .feature {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+  flex: 1;
+  text-align: center;
+}
+.course-first .feature img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.course-first .program-catalogue {
+  margin-top: 40px;
+}
+.course-first .program {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-first .program img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+.course-first .program .details {
+  flex: 1;
+  margin-left: 20px;
+}
+.course-first .program .details .title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.course-first .program .details .rating {
+  margin-top: 5px;
+  color: #ff9800;
+}
+.course-first .enroll-now {
+  background-color: #1e88e5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.course-first .side-image {
+  max-width: 300px;
+  margin-left: 60px;
+  padding-bottom: 100px;
+}
+.course-first .side-image img {
+  width: 100%;
+  border-radius: 10px;
 }

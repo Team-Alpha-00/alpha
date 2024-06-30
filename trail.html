@@ -1,87 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coding with Robby</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialised Programs</title>
     <style>
-
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.logos {
-  overflow: hidden;
-  padding: 60px 0;
-  background: white;
-  white-space: nowrap;
-  position: relative;
-}
-
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-.logos:before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-}
-
-.logos:after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-}
-
-.logos:hover .logos-slide {
-  animation-play-state: paused;
-}
-
-.logos-slide {
-  display: inline-block;
-  animation: 35s slide infinite linear;
-}
-
-.logos-slide img {
-  height: 80px;
-  margin: 0 40px;
-}
+        .course-first {
+            font-family: Arial, sans-serif;
+            background-color: #1e2a38;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .course-first .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+        .course-first .content {
+            max-width: 600px;
+        }
+        .course-first .header {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .course-first .subheader {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .course-first .talk-to-us {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .course-first .ratings {
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        .course-first .ratings span {
+            margin-right: 10px;
+        }
+        .course-first .features {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .course-first .feature {
+            background-color: #324a5e;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 10px;
+            flex: 1;
+            text-align: center;
+        }
+        .course-first .feature img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .course-first .program-catalogue {
+            margin-top: 40px;
+        }
+        .course-first .program {
+            background-color: #fff;
+            color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 600px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .course-first .program img {
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+        }
+        .course-first .program .details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .course-first .program .details .title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .course-first .program .details .rating {
+            margin-top: 5px;
+            color: #ff9800;
+        }
+        .course-first .enroll-now {
+            background-color: #1e88e5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .course-first .side-image {
+            max-width: 300px;
+            margin-left: 60px;
+            padding-bottom: 100px;
+        }
+        .course-first .side-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
     </style>
-
-  </head>
-  <body>
-    <div class="logos">
-      <div class="logos-slide">
-        <img src="./logos/1.png" />
-        <img src="./logos/2.png" alt="">
-        <img src="logos/3.jpg" alt="">
-        <img src="logos/4.png" alt="">
-        <img src="logos/5.png" alt="">
-        <img src="logos/10.png" alt="">
-        <img src="logos/9.png" alt="">
-        <img src="logos/8.png" alt="">
-        <img src="logos/7.png" alt="">
-        <img src="logos/6.png" alt="">
-        <img src="logos/11.png" alt="">
-        <img src="logos/12.png" alt="">
-      </div>
+</head>
+<body>
+  <section class="course-first">
+    <div class="container">
+        <div class="content">
+            <div class="header">Specialised Programs</div>
+            <div class="subheader">
+                Kickstart your Career with our wide range of Certified Internship Programs with 150+ Partnered Companies and IITs. Implicate your theoretical learnings in Capstone Projects and get evaluated by Industry Experts.
+            </div>
+            <a href="#" class="talk-to-us">Talk to Us</a>
+            <div class="ratings">
+                <span>⭐ Rated 4.9/5</span>
+                <span>|</span>
+                <span>👥 Trusted by 1.5 lac+ learners</span>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <img src="self-paced-icon.png" alt="Self paced">
+                    <div>Self paced</div>
+                </div>
+                <div class="feature">
+                    <img src="mentor-led-icon.png" alt="Mentor Led">
+                    <div>Mentor Led</div>
+                </div>
+                <div class="feature">
+                    <img src="professional-icon.png" alt="Professional">
+                    <div>Professional</div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="side-image">
+            <img src="assets/student.png" alt="Side Image">
+        </div>
     </div>
-
-    <script>
-      var copy = document.querySelector(".logos-slide").cloneNode(true);
-      document.querySelector(".logos").appendChild(copy);
-    </script>
-  </body>
+  </section>
+</body>
 </html>
