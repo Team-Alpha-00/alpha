@@ -3,151 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specialised Programs</title>
+    <title>FAQ Section</title>
     <style>
-        .course-first {
+        .faq-body {
             font-family: Arial, sans-serif;
-            background-color: #1e2a38;
+        background: #FFEEEE;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             color: white;
             margin: 0;
             padding: 0;
-        }
-        .course-first .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 50px;
+            height: 100vh;
         }
-        .course-first .content {
-            max-width: 600px;
-        }
-        .course-first .header {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .course-first .subheader {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-        .course-first .talk-to-us {
-            background-color: #ff9800;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-        .course-first .ratings {
-            margin-top: 20px;
-            font-size: 1em;
-        }
-        .course-first .ratings span {
-            margin-right: 10px;
-        }
-        .course-first .features {
-            display: flex;
-            justify-content: center;
-            margin-top: 40px;
-        }
-        .course-first .feature {
-            background-color: #324a5e;
+        .faq-container {
+            max-width: 800px;
+            width: 100%;
             padding: 20px;
-            border-radius: 10px;
-            margin: 0 10px;
-            flex: 1;
-            text-align: center;
         }
-        .course-first .feature img {
-            width: 50px;
-            height: 50px;
+        .faq-header {
+            font-size: 2em;
             margin-bottom: 10px;
         }
-        .course-first .program-catalogue {
-            margin-top: 40px;
+        .faq-subheader {
+            font-size: 1.5em;
+            margin-bottom: 30px;
         }
-        .course-first .program {
-            background-color: #fff;
-            color: #333;
+        .faq {
+            background-color: #1e2a38;
             border-radius: 10px;
-            padding: 20px;
-            margin: 10px auto;
-            max-width: 600px;
-            text-align: left;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 15px;
+            cursor: pointer;
         }
-        .course-first .program img {
-            width: 60px;
-            height: 60px;
-            border-radius: 5px;
-        }
-        .course-first .program .details {
-            flex: 1;
-            margin-left: 20px;
-        }
-        .course-first .program .details .title {
+        .faq-question {
             font-size: 1.2em;
             font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .course-first .program .details .rating {
-            margin-top: 5px;
-            color: #ff9800;
+        .faq-answer {
+            display: none;
+            padding-top: 10px;
+            font-size: 1em;
+            color: #bbb;
         }
-        .course-first .enroll-now {
-            background-color: #1e88e5;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
+        .faq.active .faq-answer {
+            display: block;
         }
-        .course-first .side-image {
-            max-width: 300px;
-            margin-left: 60px;
-            padding-bottom: 100px;
+        .faq.active .faq-toggle::before {
+            content: '-';
         }
-        .course-first .side-image img {
-            width: 100%;
-            border-radius: 10px;
+        .faq-toggle::before {
+            content: '+';
         }
     </style>
 </head>
 <body>
-  <section class="course-first">
-    <div class="container">
-        <div class="content">
-            <div class="header">Specialised Programs</div>
-            <div class="subheader">
-                Kickstart your Career with our wide range of Certified Internship Programs with 150+ Partnered Companies and IITs. Implicate your theoretical learnings in Capstone Projects and get evaluated by Industry Experts.
+    <div class="faq-body"> 
+    <div class="faq-container">
+        <div class="faq-header" style="color: #1e2a38;">Have doubts?</div>
+        <div class="faq-subheader">Frequently Asked Questions</div>
+        <div class="faq">
+            <div class="faq-question">
+                Who will be our Mentors?
+                <div class="faq-toggle"></div>
             </div>
-            <a href="#" class="talk-to-us">Talk to Us</a>
-            <div class="ratings">
-                <span>⭐ Rated 4.9/5</span>
-                <span>|</span>
-                <span>👥 Trusted by 1.5 lac+ learners</span>
-            </div>
-            <div class="features">
-                <div class="feature">
-                    <img src="self-paced-icon.png" alt="Self paced">
-                    <div>Self paced</div>
-                </div>
-                <div class="feature">
-                    <img src="mentor-led-icon.png" alt="Mentor Led">
-                    <div>Mentor Led</div>
-                </div>
-                <div class="feature">
-                    <img src="professional-icon.png" alt="Professional">
-                    <div>Professional</div>
-                </div>
-            </div>
-        
+            <div class="faq-answer">Our mentors are industry experts with extensive experience in their respective fields.</div>
         </div>
-        <div class="side-image">
-            <img src="assets/student.png" alt="Side Image">
+        <div class="faq">
+            <div class="faq-question">
+                Can we use these projects as Major or Minor Projects?
+                <div class="faq-toggle"></div>
+            </div>
+            <div class="faq-answer">Yes, the projects you work on can be used as Major or Minor projects for your academic requirements.</div>
+        </div>
+        <div class="faq">
+            <div class="faq-question">
+                What is the program duration?
+                <div class="faq-toggle"></div>
+            </div>
+            <div class="faq-answer">The program duration varies depending on the course. Typically, it ranges from 6 to 12 weeks.</div>
+        </div>
+        <div class="faq">
+            <div class="faq-question">
+                Are the certificates authenticated and what is the validity of the Certificates?
+                <div class="faq-toggle"></div>
+            </div>
+            <div class="faq-answer">Yes, our certificates are authenticated and have lifetime validity.</div>
         </div>
     </div>
-  </section>
+
+</div>
+    <script>
+        document.querySelectorAll('.faq').forEach(faq => {
+            faq.addEventListener('click', () => {
+                faq.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
