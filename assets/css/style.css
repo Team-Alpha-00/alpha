@@ -406,8 +406,8 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
+  background: url("../home-1.png") top center;
+  background-size: auto;
   position: relative;
 }
 
@@ -770,9 +770,6 @@ section {
 # Features
 --------------------------------------------------------------*/
 
-
-
-
 #loadMore {
   width: 200px;
   color: #fff;
@@ -783,9 +780,9 @@ section {
   border-radius: 20px;
   border: 1px solid transparent;
   background-color: rgb(82, 218, 82);
-  transition: .3s;
+  transition: 0.3s;
   text-decoration: none;
- font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #loadMore:hover {
@@ -1883,12 +1880,7 @@ section {
   border-radius: 20px;
 }
 
-
-
-
-
-
-button{
+button {
   float: right;
   margin-top: 0px;
   width: 175px;
@@ -1897,7 +1889,7 @@ button{
   outline: 0;
   border: 0;
   padding-bottom: 2px;
-  background-color: rgb(82, 218, 82);;
+  background-color: rgb(82, 218, 82);
   color: white;
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
@@ -1906,17 +1898,11 @@ button{
   font-size: 15px;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
   background-color: lightgreen;
   transition: 0.5s ease-out;
 }
-
-
-
-
-
-
 
 /*----INFINITE SLIDER----*/
 @keyframes slide {
@@ -1946,7 +1932,6 @@ button:hover{
   z-index: 2;
 }
 
-
 .logos:hover .logos-slide {
   animation-play-state: paused;
 }
@@ -1961,17 +1946,10 @@ button:hover{
   margin: 0 30px;
 }
 
-
-
-
-
-
-
-
 .course-first {
   font-family: Arial, sans-serif;
-  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
-    background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+  background: -webkit-linear-gradient(to right, #ddefbb, #ffeeee);
+  background: linear-gradient(to right, #ddefbb, #ffeeee);
   color: #1e2a38;
   margin: 0;
   padding: 0;
@@ -1987,7 +1965,7 @@ button:hover{
 }
 .course-first .header {
   font-size: 40px;
-  font-weight:600;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 .course-first .subheader {
@@ -2079,15 +2057,21 @@ button:hover{
   border-radius: 10px;
 }
 
-
-
 /*===FAQ Section==*/
 
 .faq-body {
   font-family: Arial, sans-serif;
-  background: #FFEEEE;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+  background: #ffeeee; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ddefbb,
+    #ffeeee
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ddefbb,
+    #ffeeee
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   margin: 0;
   padding: 0;
@@ -2133,8 +2117,8 @@ button:hover{
   display: block;
 }
 .faq.active .faq-toggle::before {
-  content: '-';
+  content: "-";
 }
 .faq-toggle::before {
-  content: '+';
+  content: "+";
 }
